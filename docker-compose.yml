@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+  frontend:
+    build: ./frontend
+    ports:
+      - "10002:10002"
+    depends_on:
+      - backend
