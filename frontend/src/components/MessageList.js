@@ -10,7 +10,7 @@ export default class MessageList extends React.Component {
       </li>
     );
     return (
-      <ul className='list-unstyled mb-0' style={{'overflowY': 'scroll', 'minHeight': '75vh', 'maxHeight': '75vh'}}>
+      <ul className='list-unstyled my-auto' style={{'overflowY': 'scroll', 'minHeight': '100%', 'maxHeight': '100%'}}>
         {messages}
       </ul>
     );

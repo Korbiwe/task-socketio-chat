@@ -14,6 +14,7 @@ const routes = (
       <Route path='/room' component={RoomPage}/>
       <Route path='/nickname' component={NicknamePage}/>
       <Route path='/invite' component={InvitePage}/>
+      <Route path='/**' component={HomePage}/>
     </Switch>
   </div>
 );

@@ -36,12 +36,12 @@ class RoomPage extends React.Component {
       <div>
         <RoomNavBar roomName={this.props.room.name} onLeave={this.onLeave}/>
         <div className='container-fluid'>
-          <div className='row mt-2'>
-            <div className='col-lg-10 bg-white my-0 mx-0 py-0 px-0'>
+          <div className='row' style={{ 'minHeight': '80vh', 'maxHeight': '80vh'}}>
+            <div className='col-lg-10 bg-white m-0 p-0'>
               <MessageListContainer/>
               <SendMessageForm/>
             </div>
-            <div className='col-lg-2 my-0 mx-0 py-0 px-0'>
+            <div className='col-lg-2 m-0 p-0'>
               <UserListContainer/>
             </div>
           </div>

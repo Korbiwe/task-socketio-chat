@@ -10,9 +10,9 @@ export default class UserList extends React.Component {
       </li>
     );
     return (
-      <div className='px-1'>
+      <div className='px-1' style={{'overflowY': 'scroll', 'minHeight': '100%', 'maxHeight': '100%'}}>
         <p className='lead'>Users in this room:</p>
-        <ul className='list-unstyled mb-0 bg' style={{'overflowY': 'scroll', 'minHeight': '85vh', 'maxHeight': '85vh'}}>
+        <ul className='list-unstyled mb-0'>
           {users}
         </ul>
       </div>
